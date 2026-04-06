@@ -374,3 +374,295 @@ footer{
 	color:whitesmoke;
 	font-size: 10px;
 }
+
+/*
+ {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+// HEADER 
+header {
+    width: 100%;
+    padding: 15px 0;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.headerMid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.headerMid img {
+    width: 90px;
+}
+.headerMid nav ul {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+.headerMid nav ul li a {
+    color: #555;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+.headerMid nav ul li a:hover {
+    color: #0aa4b8;
+}
+.headerMid button {
+    padding: 8px 20px;
+    border-radius: 25px;
+    border: 1px solid #0aa4b8;
+    background: #0aa4b8;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.headerMid button:hover {
+    background: #087d91;
+}
+
+// BANNER 
+.bannerMid {
+    background: url(image/marathi_web_bg.jpg) no-repeat center/cover;
+    text-align: center;
+    padding: 150px 20px 80px;
+    color: #fff;
+}
+.bannerMid h1 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+}
+.bannerMid p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.bannerMid button {
+    padding: 12px 30px;
+    border-radius: 30px;
+    background: #0aa4b8;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.bannerMid button:hover {
+    background: #087d91;
+}
+
+// EXPERIENCE 
+.experienceBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 50px 0;
+}
+.experienceItems {
+    background: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.experienceItems:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+.experienceItems h4 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.experienceItems p {
+    font-size: 14px;
+    color: #555;
+}
+
+// VIP SECTION 
+.vip {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    background: #f7e9ff;
+    padding: 30px;
+    border-radius: 25px;
+    margin: 40px 0;
+    align-items: center;
+}
+.vip nav p {
+    font-size: 18px;
+    font-weight: 600;
+}
+.vip button {
+    padding: 12px 25px;
+    background: #48276e;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.vip button:hover {
+    background: #7b5fa1;
+}
+
+// TRUE STORIES 
+.true {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-bottom: 50px;
+}
+.trueMid img {
+    width: 100%;
+    border-radius: 20px;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+.trueBox {
+    padding: 20px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+.trueBox h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.trueBox p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+}
+
+// FAQ SECTION 
+.askedMid {
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    margin-bottom: 12px;
+    background: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.askedMid:hover {
+    background: #f7f7f7;
+}
+.askedMid h2 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+.askedMid i {
+    font-size: 16px;
+}
+
+// PROFILE SECTIONS 
+.profile {
+    padding: 20px;
+    background: #f9f9fb;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.profile h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.profile ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.profile ul li a {
+    font-size: 14px;
+    color: #555;
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+    transition: all 0.3s;
+}
+.profile ul li a:hover {
+    background: #0aa4b8;
+    color: #fff;
+    border-color: #0aa4b8;
+}
+
+// NEEDS SECTION 
+.needs, .needsBox {
+    background: #f9f9fb;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 40px;
+}
+.needsBox {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+.needsBox h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.needsBox a {
+    display: block;
+    color: #555;
+    font-size: 13px;
+    margin-bottom: 5px;
+    transition: color 0.3s;
+}
+.needsBox a:hover {
+    color: #0aa4b8;
+}
+
+// FOOTER 
+footer {
+    background: #212126;
+    color: #fff;
+    padding: 30px 15px;
+    text-align: center;
+}
+footer p {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+// RESPONSIVE 
+@media (max-width: 768px) {
+    .headerMid {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .bannerMid {
+        padding: 80px 15px 50px;
+    }
+    .bannerMid h1 {
+        font-size: 28px;
+    }
+    .bannerMid p {
+        font-size: 14px;
+    }
+    .vip, .experienceBox, .true, .needsBox {
+        grid-template-columns: 1fr;
+    }
+}
+*/
